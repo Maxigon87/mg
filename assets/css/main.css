@@ -118,7 +118,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #376853 !important;
+			color: #442b0b !important;
 		}
 
 	strong, b {
@@ -2402,9 +2402,9 @@ input, select, textarea {
 				font-family: 'Font Awesome 5 Free';
 				font-weight: 400;
 			}
-
+				/*Colores de los iconos de ¿Por qué elegirnos? */
 			ul.feature-icons li:before {
-				background: #000000;
+				background: #442b0b;
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2621,7 +2621,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		.button.primary {
 			/*boton enviar mensaje*/
-			background-color: #376853;
+			background-color: #442b0b;
 			color: #ffffff !important;
 		}
 
@@ -2704,7 +2704,7 @@ input, select, textarea {
 		-ms-justify-content: space-between;
 		justify-content: space-between;
 		/* Color del banner lateral */
-		background: #376853;
+		background: #442b0b;
 		color: #d2f2e9;
 		height: 100%;
 		overflow-y: auto;
@@ -3083,7 +3083,7 @@ input, select, textarea {
 
 					#titleBar .toggle:before {
 						/*Color de boton banner lateral*/
-						background: #376853;
+						background: #442b0b;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
