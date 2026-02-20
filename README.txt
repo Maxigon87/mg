@@ -1,34 +1,41 @@
-Read Only by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 🏗️ MG - Construcciones & Servicios
 
+Bienvenido al repositorio oficial del sitio web de **MG**. Este proyecto presenta una solución digital moderna y profesional para ofrecer servicios integrales de construcción y mantenimiento.
 
-Just a super simple single-page responsive template built for personal sites and portfolios
-(although it'd definitely work for other stuff too). Includes a contact form, pre-styled
-elements, and Sass sources.
+> *"Tu proyecto, nuestra prioridad."*
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+---
 
-(* = Not included)
+## 📄 Descripción
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+Esta página web ha sido diseñada como un portafolio de servicios y punto de contacto para clientes. Su estructura de **página única (One Page)** garantiza una navegación fluida y una experiencia de usuario óptima tanto en dispositivos móviles como en escritorio.
 
-AJ
-aj@lkn.io | @ajlkn
+### ✨ Características Principales
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+*   📱 **Diseño 100% Responsivo:** Adaptable a cualquier tamaño de pantalla.
+*   📋 **Secciones Clave:** Información sobre la empresa, motivos para elegirnos y catálogo de servicios.
+*   📧 **Formulario de Contacto:** Integrado y funcional para consultas directas.
+*   🖼️ **Galería Visual:** Muestra clara de los trabajos y especialidades.
 
+---
 
-Credits:
+## 🛠️ Servicios Detallados
 
-	Demo Images:
-		Unsplash (unsplash.com)
+El sitio destaca las siguientes áreas de especialización profesional:
 
-	Icons:
-		Font Awesome (fontawesome.io)
+*   🧱 **Albañilería:** Construcción de muros, ampliaciones y reformas estructurales.
+*   🎨 **Pintura:** Renovación de espacios interiores y exteriores con acabados prolijos.
+*   🔥 **Gasista:** Instalaciones, reparación y pruebas de hermeticidad bajo normativa.
+*   🚿 **Plomería:** Soluciones rápidas para pérdidas, sanitarios y griferías.
+*   ⚡ **Electricidad:** Instalaciones domiciliarias seguras y mantenimiento.
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+---
+
+## 📢 Créditos y Atribución
+
+Este sitio web fue desarrollado adaptando la plantilla **"Read Only"** de HTML5 UP.
+
+*   **Plantilla Base:** [Read Only](https://html5up.net/read-only) por @ajlkn
+*   **Licencia:** [CCA 3.0](https://html5up.net/license) (Gratis para uso personal y comercial con atribución).
+*   **Tecnologías:** HTML5, CSS3, jQuery, Font Awesome.
+*   **Imágenes:** Recursos propios y de demostración (Unsplash).
