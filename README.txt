@@ -29,13 +29,3 @@ El sitio destaca las siguientes áreas de especialización profesional:
 *   🚿 **Plomería:** Soluciones rápidas para pérdidas, sanitarios y griferías.
 *   ⚡ **Electricidad:** Instalaciones domiciliarias seguras y mantenimiento.
 
----
-
-## 📢 Créditos y Atribución
-
-Este sitio web fue desarrollado adaptando la plantilla **"Read Only"** de HTML5 UP.
-
-*   **Plantilla Base:** [Read Only](https://html5up.net/read-only) por @ajlkn
-*   **Licencia:** [CCA 3.0](https://html5up.net/license) (Gratis para uso personal y comercial con atribución).
-*   **Tecnologías:** HTML5, CSS3, jQuery, Font Awesome.
-*   **Imágenes:** Recursos propios y de demostración (Unsplash).
