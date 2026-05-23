@@ -691,6 +691,79 @@ p {
     color: var(--bg-primary);
 }
 
+/* Custom Colors for Service Icons */
+.service-icon.icon-construccion {
+    color: #C83E3B;
+    background-color: rgba(200, 62, 59, 0.08);
+}
+.service-card:hover .service-icon.icon-construccion {
+    color: #FFFFFF;
+    background-color: #C83E3B;
+}
+
+.service-icon.icon-soldadura {
+    color: #607D8B;
+    background-color: rgba(96, 125, 139, 0.08);
+}
+.service-card:hover .service-icon.icon-soldadura {
+    color: #FFFFFF;
+    background-color: #607D8B;
+}
+
+.service-icon.icon-electricidad {
+    color: #D48C00;
+    background-color: rgba(212, 140, 0, 0.08);
+}
+.service-card:hover .service-icon.icon-electricidad {
+    color: #FFFFFF;
+    background-color: #D48C00;
+}
+
+.service-icon.icon-techos {
+    color: #D35400;
+    background-color: rgba(211, 84, 0, 0.08);
+}
+.service-card:hover .service-icon.icon-techos {
+    color: #FFFFFF;
+    background-color: #D35400;
+}
+
+.service-icon.icon-fontaneria {
+    color: #0288D1;
+    background-color: rgba(2, 136, 209, 0.08);
+}
+.service-card:hover .service-icon.icon-fontaneria {
+    color: #FFFFFF;
+    background-color: #0288D1;
+}
+
+.service-icon.icon-gas {
+    color: #5E35B1;
+    background-color: rgba(94, 53, 177, 0.08);
+}
+.service-card:hover .service-icon.icon-gas {
+    color: #FFFFFF;
+    background-color: #5E35B1;
+}
+
+.service-icon.icon-pintura {
+    color: #C2185B;
+    background-color: rgba(194, 24, 91, 0.08);
+}
+.service-card:hover .service-icon.icon-pintura {
+    color: #FFFFFF;
+    background-color: #C2185B;
+}
+
+.service-icon.icon-jardineria {
+    color: #2E7D32;
+    background-color: rgba(46, 125, 50, 0.08);
+}
+.service-card:hover .service-icon.icon-jardineria {
+    color: #FFFFFF;
+    background-color: #2E7D32;
+}
+
 .service-icon svg {
     width: 28px;
     height: 28px;
