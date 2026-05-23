@@ -1,159 +1,122 @@
-/*
-	Read Only by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+document.addEventListener('DOMContentLoaded', () => {
 
-(function($) {
+    // 1. HEADER SCROLL EFFECT
+    const header = document.getElementById('header');
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    };
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial call in case page is refreshed while scrolled
 
-	var $window = $(window),
-		$body = $('body'),
-		$header = $('#header'),
-		$titleBar = null,
-		$nav = $('#nav'),
-		$wrapper = $('#wrapper');
+    // 2. MOBILE MENU TOGGLE
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:   [ '1281px',  '1680px' ],
-			large:    [ '1025px',  '1280px' ],
-			medium:   [ '737px',   '1024px' ],
-			small:    [ '481px',   '736px'  ],
-			xsmall:   [ null,      '480px'  ],
-		});
+    const toggleMobileMenu = () => {
+        mobileMenuToggle.classList.toggle('open');
+        mobileNavOverlay.classList.toggle('open');
+        
+        // Prevent body scrolling when mobile menu is open
+        if (mobileNavOverlay.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    };
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+    mobileMenuToggle.addEventListener('click', toggleMobileMenu);
 
-	// Tweaks/fixes.
+    // Close mobile menu when clicking a link
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (mobileNavOverlay.classList.contains('open')) {
+                toggleMobileMenu();
+            }
+        });
+    });
 
-		// Polyfill: Object fit.
-			if (!browser.canUse('object-fit')) {
+    // 3. SMOOTH SCROLL FOR LINKS
+    const allLinks = document.querySelectorAll('a[href^="#"]');
+    allLinks.forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 
-				$('.image[data-position]').each(function() {
+    // 4. SCROLL REVEAL (INTERSECTION OBSERVER)
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Once it is revealed, we can unobserve it
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    });
 
-					var $this = $(this),
-						$img = $this.children('img');
+    revealElements.forEach(element => {
+        revealObserver.observe(element);
+    });
 
-					// Apply img as background.
-						$this
-							.css('background-image', 'url("' + $img.attr('src') + '")')
-							.css('background-position', $this.data('position'))
-							.css('background-size', 'cover')
-							.css('background-repeat', 'no-repeat');
+    // 5. ACTIVE NAV LINK HIGHLIGHTING
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-					// Hide img.
-						$img
-							.css('opacity', '0');
+    const activeLinkObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const sectionId = entry.target.getAttribute('id');
+                
+                navLinks.forEach(link => {
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    } else {
+                        link.classList.remove('active');
+                    }
+                });
+            }
+        });
+    }, {
+        threshold: 0.35, // Trigger when 35% of the section is visible
+        rootMargin: '-80px 0px -40% 0px' // Adjustment for sticky header height
+    });
 
-				});
+    sections.forEach(section => {
+        activeLinkObserver.observe(section);
+    });
 
-			}
-
-	// Header Panel.
-
-		// Nav.
-			var $nav_a = $nav.find('a');
-
-			$nav_a
-				.addClass('scrolly')
-				.on('click', function() {
-
-					var $this = $(this);
-
-					// External link? Bail.
-						if ($this.attr('href').charAt(0) != '#')
-							return;
-
-					// Deactivate all links.
-						$nav_a.removeClass('active');
-
-					// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
-						$this
-							.addClass('active')
-							.addClass('active-locked');
-
-				})
-				.each(function() {
-
-					var	$this = $(this),
-						id = $this.attr('href'),
-						$section = $(id);
-
-					// No section for this link? Bail.
-						if ($section.length < 1)
-							return;
-
-					// Scrollex.
-						$section.scrollex({
-							mode: 'middle',
-							top: '5vh',
-							bottom: '5vh',
-							initialize: function() {
-
-								// Deactivate section.
-									$section.addClass('inactive');
-
-							},
-							enter: function() {
-
-								// Activate section.
-									$section.removeClass('inactive');
-
-								// No locked links? Deactivate all links and activate this section's one.
-									if ($nav_a.filter('.active-locked').length == 0) {
-
-										$nav_a.removeClass('active');
-										$this.addClass('active');
-
-									}
-
-								// Otherwise, if this section's link is the one that's locked, unlock it.
-									else if ($this.hasClass('active-locked'))
-										$this.removeClass('active-locked');
-
-							}
-						});
-
-				});
-
-		// Title Bar.
-			$titleBar = $(
-				'<div id="titleBar">' +
-					'<a href="#header" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
-				'</div>'
-			)
-				.appendTo($body);
-
-		// Panel.
-			$header
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'right',
-					target: $body,
-					visibleClass: 'header-visible'
-				});
-
-	// Scrolly.
-		$('.scrolly').scrolly({
-			speed: 1000,
-			offset: function() {
-
-				if (breakpoints.active('<=medium'))
-					return $titleBar.height();
-
-				return 0;
-
-			}
-		});
-
-})(jQuery);
+    // 6. CONTACT FORM INTERACTION
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            // We let form submission proceed to Forminit service, 
+            // but we can add a visual effect of submitting
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Enviando...';
+                
+                // Let the native form submit proceed.
+                // It will POST to the action URL.
+            }
+        });
+    }
+});

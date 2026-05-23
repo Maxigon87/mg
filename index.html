@@ -1,173 +1,509 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>MG Pagina Oficial</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Servicios de construcción y mantenimiento profesional en hogares y comercios.">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/png" href="images/favicon.png" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Cleo Servis — Servicios Técnicos & Mantenimiento General</title>
+    <meta name="description" content="Servicio técnico profesional e integral en San Luis, Argentina. Gas, soldadura, electricidad, construcción, reparación de techos, plomería, jardinería y pintura.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<span class="image avatar"><img src="images/avatar.png" alt="" style="border: 3px solid white;" /></span>
-					<!-- Titulo Principal Opcional -->
-					<h1 id="logo" style="display: none;"><a href="#">MG</a></h1>
-					<p>“Tu proyecto, nuestra prioridad.”</p>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#one" class="active">Nosotros</a></li>
-						<li><a href="#two">¿Por qué elegirnos?</a></li>
-						<li><a href="#three">Experiencia y Servicios</a></li>
-						<li><a href="#four">Contacto</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li> 
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://api.whatsapp.com/send/?phone=" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
-					</ul>
-				</footer>
-			</section>
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">CS</span>
+                <span class="logo-text">Cleo Servis</span>
+            </a>
+            
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#process" class="nav-link">Proceso</a></li>
+                    <li><a href="#portfolio" class="nav-link">Galería</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary btn-sm">Presupuesto</a>
+            </div>
 
-				<!-- Main -->
-					<div id="main">
+            <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
 
-						<!-- One -->
-							<section id="one">
-								<div class="image main" data-position="center">
-									<img src="images/banner.png" alt="" />
-								</div>
-								<div class="container">
-									<header class="major">
-										<h2>Construcciones & Servicios</h2>
-										
-										<p>Trabajos profesionales para hogares y comercios.</p>
-									</header>
-									<p>En MG ofrecemos soluciones integrales en construcción, mantenimiento y reparaciones para hogares y comercios. Trabajamos con responsabilidad, materiales de calidad y atención al detalle en cada proyecto, garantizando resultados duraderos y la satisfacción de nuestros clientes.</p>
-								</div>
-							</section>
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay">
+        <nav class="mobile-nav-menu">
+            <ul>
+                <li><a href="#about" class="mobile-nav-link">Nosotros</a></li>
+                <li><a href="#services" class="mobile-nav-link">Servicios</a></li>
+                <li><a href="#process" class="mobile-nav-link">Proceso</a></li>
+                <li><a href="#portfolio" class="mobile-nav-link">Galería</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contacto</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-full mobile-nav-link">Presupuesto Gratis</a></li>
+            </ul>
+        </nav>
+    </div>
 
-						<!-- Two -->
-							<section id="two">
-								<div class="container">
-									<h3>¿Por qué elegirnos?</h3>
-									<ul class="feature-icons">
-										<li class="icon solid fa-clipboard-check">Diagnóstico profesional en el momento</li>
-										<li class="icon solid fa-clock">Cumplimiento en tiempos de entrega</li>
-										<li class="icon solid fa-gem">Materiales de primera calidad</li>
-										<li class="icon solid fa-thumbs-up">Trabajo garantizado</li>
-										<li class="icon solid fa-user-check">Atención personalizada</li>
-										<li class="icon solid fa-check-circle">Responsabilidad y prolijidad</li>
-									</ul>
-								</div>
-							</section>
+    <!-- Main Wrapper -->
+    <main id="main-content">
 
-						<!-- Three -->
-							<section id="three">
-								<div class="container">
-									<h3>Experiencia y Servicios</h3>
-									<p>Realizamos trabajos profesionales con responsabilidad y compromiso. Cada proyecto es ejecutado con materiales de calidad y atención al detalle.</p>
-									<div class="features">
-										<article>
-											<a class="image"><img src="images/pic01.png" alt="" /></a>
-											<div class="inner">
-												<h4>🧱 Albañilería</h4>
-												<p>Construcción de muros, ampliaciones, reparaciones estructurales y trabajos en general. Nos aseguramos de entregar obras sólidas, niveladas y con excelente terminación.</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/pic02.png" alt="" /></a>
-											<div class="inner">
-												<h4>🎨 Pintura</h4>
-												<p>Pintura interior y exterior, impermeabilización y renovación de espacios. Trabajamos con productos de primera calidad para lograr acabados prolijos y duraderos.</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/pic03.png" alt="" /></a>
-											<div class="inner">
-												<h4>🔥 Gasista</h4>
-												<p>Instalación y reparación de sistemas de gas, pruebas de hermeticidad y colocación de artefactos. Trabajo seguro y cumpliendo normativas vigentes.</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/pic04.png" alt="" /></a>
-											<div class="inner">
-												<h4>🚿 Plomería</h4>
-												<p>Reparación de pérdidas, instalación de sanitarios, griferías y sistemas de agua fría/caliente. Soluciones rápidas y efectivas.</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/pic05.png" alt="" /></a>
-											<div class="inner">
-												<h4>⚡ Electricidad</h4>
-												<p>Instalaciones eléctricas domiciliarias, cambio de tableros y mantenimiento preventivo.</p>
-											</div>
-										</article>
-										<article>
-											<a class="image"><img src="images/pic06.png" alt="" /></a>
-											<div class="inner">
-												<h4>🌹 Jardinería</h4>
-												<p>Mantenimiento integral de espacios verdes, poda, corte de césped, diseño de jardines y limpieza de terrenos.</p>
-											</div>
-										</article>
-									</div>
-								</div>
-							</section>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="blueprint-bg"></div>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="hero-tag">Servicios Técnicos Profesionales</span>
+                    <h1>Soluciones reales<br>para <span class="accent-text">cada espacio.</span></h1>
+                    <p class="hero-description">
+                        Ofrecemos un servicio técnico integral y de mantenimiento para hogares, comercios y empresas en San Luis. Experiencia, prolijidad y compromiso garantizados en cada trabajo.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Iniciar Proyecto</a>
+                        <a href="#services" class="btn btn-outline">Ver Especialidades</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal border-cobre">
+                    <div class="image-wrapper">
+                        <img src="images/hero_construction.png" alt="Reforma y mantenimiento residencial con acabados premium y diseño moderno" class="hero-img">
+                        <div class="badge-card">
+                            <span class="badge-number">San Luis</span>
+                            <span class="badge-text">Zona de cobertura total</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>📬 Contáctame</h3>
-									<p>¿Tienes una idea en mente o necesitas una reparación urgente? 🛠️ Escríbeme y encontremos la mejor solución para tu hogar o comercio. ¡Estoy listo para ayudarte! 🤝</p>
-									<form method="post" action="https://forminit.com/f/9g3h8hb2lqa">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall"><input type="text" name="fi-sender-fullName" id="name" placeholder="Nombre completo " /></div>
-											<div class="col-6 col-12-xsmall"><input type="email" name="fi-sender-email" id="email" placeholder="Tu correo electrónico " /></div>
-											<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto " /></div>
-											<div class="col-12"><textarea name="fi-text-message" id="message" placeholder="Cuéntame los detalles... " rows="6"></textarea></div>
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" class="primary" value="Enviar Mensaje " /></li>
-													<li><input type="reset" value="Limpiar " /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
-								</div>
-							</section>
-					</div>
+        <!-- Stats Bar Section -->
+        <section class="stats-section">
+            <div class="container stats-container">
+                <div class="stat-item reveal">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Compromiso y Garantía</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item reveal delay-1">
+                    <span class="stat-number">Rápido</span>
+                    <span class="stat-label">Diagnóstico y Presupuesto</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item reveal delay-2">
+                    <span class="stat-number">San Luis</span>
+                    <span class="stat-label">Atención Local Directa</span>
+                </div>
+            </div>
+        </section>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="container">
-							<ul class="copyright">
-								<li>Design: <a href="">EMGI</a></li>
-							</ul>
-						</div>
-					</section>
+        <!-- About Section (Nosotros) -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-visual reveal">
+                    <div class="about-image-wrapper">
+                        <img src="images/technical_service.png" alt="Trabajo técnico y soldadura con soldadora profesional" class="about-img">
+                        <div class="decor-box"></div>
+                    </div>
+                </div>
+                <div class="about-content reveal delay-1">
+                    <span class="section-tag">Sobre Cleo Servis</span>
+                    <h2>Tu espacio en buenas manos.</h2>
+                    <p class="about-lead">
+                        En Cleo Servis nos especializamos en brindar soporte técnico multidisciplinar y soluciones de mantenimiento general con un enfoque cercano y altamente profesional.
+                    </p>
+                    <p>
+                        Ya sea una instalación eléctrica compleja, una soldadura de estructura metálica, la reparación de filtraciones en techos o el mantenimiento de tu jardín, nos encargamos de todo con el máximo detalle. Evitamos las soluciones temporales e improvisadas: trabajamos con materiales duraderos y herramientas de precisión para garantizar la tranquilidad y seguridad de nuestros clientes.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="feature-icon-small">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                            </div>
+                            <div>
+                                <h3>Equipo Multidisciplinario</h3>
+                                <p>Soluciones coordinadas en gas, electricidad, soldadura, plomería, albañilería y pintura.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="feature-icon-small">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M20 12v8H4v-8"/><path d="m4 12 8-8 8 8"/></svg>
+                            </div>
+                            <div>
+                                <h3>Cobertura Local en San Luis</h3>
+                                <p>Asistencia ágil y directa en toda la provincia de San Luis, Argentina, con respuesta rápida ante emergencias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			</div>
+        <!-- Services Section (Servicios) -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Nuestras Especialidades</span>
+                    <h2>Servicios Técnicos e Integrales</h2>
+                    <p class="section-desc">Cubrimos una amplia variedad de necesidades técnicas y de mantenimiento para asegurar el correcto funcionamiento de tu hogar o local comercial.</p>
+                </div>
+                
+                <div class="services-grid">
+                    
+                    <!-- Servicio 1: Construcción y Reformas -->
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18M3 15h18M9 3v6M15 3v6M12 9v6M6 15v6M18 15v6" />
+                            </svg>
+                        </div>
+                        <h3>Construcción y Albañilería</h3>
+                        <p>Reformas integrales, levantamiento de muros, revoques, colocación de pisos y cerámicos. Soluciones sólidas y terminaciones niveladas con total prolijidad.</p>
+                    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <!-- Servicio 2: Soldadura y Herrería -->
+                    <div class="service-card reveal delay-1">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l5-5a1 1 0 0 0 0-1.4l-1.6-1.6a1 1 0 0 0-1.4 0l-5 5z" />
+                                <path d="m13 13-9 9H2v-2l9-9M18 14h.01M15 17h.01M19 19h.01M14 21h.01" />
+                            </svg>
+                        </div>
+                        <h3>Soldadura y Herrería</h3>
+                        <p>Fabricación y reparación de portones, rejas, estructuras metálicas y soportes especiales. Soldadura precisa y uniones firmes para mayor seguridad.</p>
+                    </div>
 
-	</body>
+                    <!-- Servicio 3: Electricidad -->
+                    <div class="service-card reveal delay-2">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                        </div>
+                        <h3>Electricidad General</h3>
+                        <p>Cableados, armado y reparación de tableros eléctricos, disyuntores, térmicas, instalación de luminarias y detección de cortocircuitos de forma segura.</p>
+                    </div>
+
+                    <!-- Servicio 4: Reparación de Techos -->
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 22V10l9-7 9 7v12" />
+                                <path d="M2 10h20M12 22V10" />
+                            </svg>
+                        </div>
+                        <h3>Reparación de Techos</h3>
+                        <p>Solución a filtraciones y goteras, impermeabilización de terrazas, reparación de cubiertas de chapa y tejas, limpieza y recambio de canaletas.</p>
+                    </div>
+
+                    <!-- Servicio 5: Fontanería / Plomería -->
+                    <div class="service-card reveal delay-1">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-11-7-11S5 10.7 5 15a7 7 0 0 0 7 7z" />
+                            </svg>
+                        </div>
+                        <h3>Fontanería y Plomería</h3>
+                        <p>Detección y reparación de fugas de agua, colocación de griferías, sanitarios, destapaciones de cañerías e instalaciones de agua fría y caliente.</p>
+                    </div>
+
+                    <!-- Servicio 6: Gas y Calefacción -->
+                    <div class="service-card reveal delay-2">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z" />
+                            </svg>
+                        </div>
+                        <h3>Instalación de Gas</h3>
+                        <p>Colocación y service de cocinas, calefactores, termotanques y calderas. Pruebas de fugas y mantenimiento preventivo bajo normas de seguridad.</p>
+                    </div>
+
+                    <!-- Servicio 7: Pintura Profesional -->
+                    <div class="service-card reveal">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m14 6-4-4-4 4M10 2v10M14 12H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2z" />
+                            </svg>
+                        </div>
+                        <h3>Pintura e Impermeabilización</h3>
+                        <p>Trabajos de pintura látex y sintética en interiores y exteriores. Tratamientos antihumedad y acabados perfectos y duraderos en paredes y maderas.</p>
+                    </div>
+
+                    <!-- Servicio 8: Jardinería -->
+                    <div class="service-card reveal delay-1">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a10 10 0 0 1 10 10c0 5.5-4.5 10-10 10S2 17.5 2 12A10 10 0 0 1 12 2z"/>
+                                <path d="M12 6c-2 2-3 4-3 6 0 2 1.5 3 3 3s3-1 3-3c0-2-1-4-3-6z"/>
+                            </svg>
+                        </div>
+                        <h3>Jardinería y Espacios Verdes</h3>
+                        <p>Mantenimiento integral de jardines, corte de césped, poda correctiva, limpieza de terrenos, desmalezado y diseño paisajístico para hogares y predios.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section (Proceso de Trabajo) -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Cómo Trabajamos</span>
+                    <h2>Un proceso transparente e impecable.</h2>
+                    <p class="section-desc">Nos enfocamos en el diagnóstico preciso y en brindarte un servicio sin sorpresas de principio a fin.</p>
+                </div>
+
+                <div class="process-timeline">
+                    <!-- Paso 1 -->
+                    <div class="process-step reveal">
+                        <div class="step-number-box">
+                            <span class="step-num">01</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Diagnóstico & Presupuesto</h3>
+                            <p>Relevamos la situación de forma técnica en el lugar, detectamos el origen de la falla y te damos un presupuesto detallado sin costos ocultos.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 2 -->
+                    <div class="process-step reveal delay-1">
+                        <div class="step-number-box">
+                            <span class="step-num">02</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Materiales y Seguridad</h3>
+                            <p>Utilizamos repuestos homologados, cables bajo normas, caños de alta resistencia y soldaduras óptimas para garantizar la seguridad de tu hogar.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 3 -->
+                    <div class="process-step reveal delay-2">
+                        <div class="step-number-box">
+                            <span class="step-num">03</span>
+                        </div>
+                        <div class="step-content">
+                            <h3>Ejecución y Limpieza</h3>
+                            <p>Llevamos adelante el servicio técnico de forma rápida y prolija. Al finalizar, limpiamos y ordenamos el espacio de trabajo para tu comodidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Gallery Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Galería de Trabajo</span>
+                    <h2>Experiencia, detalle y compromiso.</h2>
+                    <p class="section-desc">Registro visual de la calidad artesanal y el profesionalismo que aplicamos en cada servicio técnico.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-item card-large reveal">
+                        <img src="images/hero_construction.png" alt="Reforma y pintura de interiores residencial">
+                        <div class="portfolio-info">
+                            <span>Reforma General</span>
+                            <h4>Remodelación Integral de Espacios</h4>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal delay-1">
+                        <img src="images/technical_service.png" alt="Trabajo técnico y soldadura con soldadora profesional">
+                        <div class="portfolio-info">
+                            <span>Soldadura y Herrería</span>
+                            <h4>Soldadura de Precisión en Estructuras</h4>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal delay-2">
+                        <img src="images/roof_repair.png" alt="Reparación de techos y goteras">
+                        <div class="portfolio-info">
+                            <span>Reparación de techos</span>
+                            <h4>Mantenimiento y Filtraciones en Cubiertas</h4>
+                        </div>
+                    </div>
+                    <div class="portfolio-item card-wide reveal">
+                        <img src="images/masonry_detail.png" alt="Revestimientos y terminaciones de piedra">
+                        <div class="portfolio-info">
+                            <span>Albañilería de terminación</span>
+                            <h4>Revestimiento de Muro Exterior</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Testimonios</span>
+                    <h2>Vecinos que confían en Cleo Servis.</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card reveal">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">"La reparación del techo y la impermeabilización de la terraza quedó excelente. Tuvimos fuertes lluvias en San Luis y no cayó ni una sola gota. Muy responsables."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Andrés Mendoza</strong>
+                                <span>Vecino de San Luis Centro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal delay-1">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">"Llamé a Cleo Servis por un cortocircuito eléctrico urgente y una reja rota que necesitaba soldadura. En el mismo día resolvieron ambos problemas. Rapidez y excelente trato."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Valeria Rossi</strong>
+                                <span>Comerciante en Juana Koslay</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card reveal delay-2">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">"Hicieron la instalación de gas de la estufa y pintaron todo el living. Súper limpios, prolijos y el presupuesto fue muy honesto. Los volveré a contratar."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <strong>Carlos Gómez</strong>
+                                <span>Propietario en La Punta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-info reveal">
+                    <span class="section-tag">Contacto</span>
+                    <h2>Demos vida a tu próximo proyecto.</h2>
+                    <p class="contact-lead">¿Tienes una urgencia técnica o necesitas planificar una reforma? Escríbenos y te responderemos a la brevedad con un diagnóstico.</p>
+                    
+                    <div class="contact-details">
+                        <a href="https://wa.me/5492661234567" target="_blank" rel="noopener noreferrer" class="contact-detail-card">
+                            <div class="detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div class="detail-content">
+                                <h4>WhatsApp Directo</h4>
+                                <p>+54 9 266 123-4567</p>
+                                <span class="action-link">Conversar ahora →</span>
+                            </div>
+                        </a>
+
+                        <div class="contact-detail-card">
+                            <div class="detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Correo Electrónico</h4>
+                                <p>contacto@cleoservis.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-detail-card">
+                            <div class="detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Zona de Cobertura</h4>
+                                <p>San Luis Capital, Juana Koslay, La Punta y alrededores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container reveal delay-1">
+                    <form method="post" action="https://forminit.com/f/9g3h8hb2lqa" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" name="fi-sender-fullName" id="name" placeholder="Ej. Juan Pérez" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="fi-sender-email" id="email" placeholder="Ej. juan@correo.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" name="subject" id="subject" placeholder="Ej. Presupuesto para reparación de techo / pintura" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Detalles del trabajo</label>
+                            <textarea name="fi-text-message" id="message" placeholder="Cuéntanos qué necesitas reparar, las medidas, o la urgencia del servicio..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">
+                    <span class="logo-accent">CS</span>
+                    <span class="logo-text">Cleo Servis</span>
+                </a>
+                <p class="footer-slogan">"Tu espacio en buenas manos."</p>
+                <p class="footer-description">Servicios técnicos integrales, soldadura, gas, electricidad, plomería, pintura y mantenimiento general en San Luis.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#process">Proceso</a></li>
+                    <li><a href="#portfolio">Galería</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p>+54 9 266 123-4567</p>
+                <p>contacto@cleoservis.com</p>
+                <p>Lunes a Sábado: 8:00 - 19:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p class="copyright">&copy; 2026 Cleo Servis. Todos los derechos reservados.</p>
+                <p class="credits">Diseñado por <a href="#" class="footer-credit-link">EMGI</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Vanilla JS Code -->
+    <script src="assets/js/main.js" defer></script>
+</body>
 </html>
